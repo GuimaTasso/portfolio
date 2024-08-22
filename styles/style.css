@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
-
 :root {
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
@@ -20,6 +17,9 @@
 }
 
 #mudartema {
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    z-index: 1000;
     height: 50px;
     width: 50px;
     padding: 0%;
@@ -29,12 +29,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     top: 20px;
     right: 20px;
 }
 
+.tema__btn {
+    margin-left: auto; 
+    margin-right: 8%;
+    border: none;
+    cursor: pointer;
+}
+
 #mudartema svg {
+    width: 60%;
+    height: 60%;
     fill: #000000;
 }
 
@@ -180,6 +188,7 @@ body {
 
     .cabecalho__menu {
         justify-content: center;
+        align-items: flex-start;
     }
 
     .apresentacao {
@@ -193,5 +202,10 @@ body {
 
     .apresentacao__imagem {
         width: auto;
+    }
+
+    #mudartema {
+        margin-left: auto;
+        padding: 8px;
     }
 }
